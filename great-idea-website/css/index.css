@@ -167,28 +167,35 @@ nav {
   height: 100px;
   display: inline-block;
   position: fixed;
-  padding-top: 40px;
+  padding-top: 50px;
   background: white;
   z-index: 1;
 }
 .nav-links {
   width: 1000px;
-  height: 60px;
+  height: 40px;
   display: inline-block;
 }
 
 .nav-links a {
-  padding: 0 50px;
+  padding: 5px 50px;
   text-decoration: none;
   color: gray;
 }
 
 .nav-links a:hover {
   color: black;
+  border: 1px solid black;
+  border-radius: 3px;
 }
 
-.nav-links img {
-  height: 60px;
+.navbar a:hover {
+  border: 1px solid black;
+  border-radius: 3px;
+}
+
+.img-link {
+  padding: 15px;
 }
 
 .logo {
@@ -277,4 +284,61 @@ hr {
   text-align: center;
   font-family: "Contrail One", cursive;
   margin-top: 20px;
+  margin-bottom: 100px;
+}
+
+.contact-container {
+  display: inline-block;
+  position: relative;
+  top: 250px;
+  width: 100%;
+}
+
+.contact-us {
+  color: black;
+  font-size: 3rem;
+}
+
+.contact-form {
+  display: inline-block;
+  width: 100%;
+}
+
+input[type="text"],
+textarea {
+  border: 2px solid grey;
+  border-radius: 3px;
+}
+
+input[type="text"] {
+  width: 300px;
+  height: 30px;
+  border-radius: 3px;
+  margin: 10px 0;
+}
+
+textarea {
+  width: 400px;
+  height: 200px;
+  border-radius: 3px;
+  margin: 10px 0;
+  resize: none;
+}
+
+label {
+  color: grey;
+}
+
+button {
+  background: grey;
+  color: white;
+  border: 2px solid grey;
+  padding: 5px 10px;
+}
+
+button:hover {
+  background: white;
+  color: black;
+  border: 2px solid grey;
+  padding: 5px 10px;
 }
